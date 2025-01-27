@@ -1,0 +1,46 @@
+@import "../styles/variables.css";
+
+.navbar {
+    background-color: var(--color-dark) !important;
+    padding: 0.5rem 1rem;
+}
+
+.brand {
+    color: var(--color-secondary) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+
+.brand:hover .logo {
+    transform: scale(1.1);
+}
+
+.navButton {
+    background-color: transparent;
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.navButton:hover,
+.navButton:focus {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

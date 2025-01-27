@@ -1,0 +1,16 @@
+@import "../styles/variables.css";
+
+.cartWidget {
+    display: flex;
+    align-items: center;
+}
+
+.cartIcon {
+    color: var(--color-white);
+}
+
+.badge {
+    background-color: var(--color-secondary) !important;
+    margin-left: 0.5rem;
+}
+

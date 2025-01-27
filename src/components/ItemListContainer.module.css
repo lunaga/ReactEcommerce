@@ -1,0 +1,16 @@
+@import "../styles/variables.css";
+
+.container {
+    background-color: var(--color-gray);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.greeting {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px var(--color-dark);
+}
+
