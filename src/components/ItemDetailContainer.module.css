@@ -2,6 +2,9 @@
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    background-color: var(--color-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
     .loading,
@@ -9,6 +12,7 @@
     text-align: center;
     font-size: 1.2rem;
     margin-top: 20px;
+    color: var(--color-white);
     }
     
     .title {
@@ -29,6 +33,7 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: var(--color-white);
     }
     
     .price {
@@ -40,5 +45,19 @@
     
     .category {
     font-size: 1rem;
-        color: var(--color-gray);
+    color: var(--color-light-gray);
+    margin-bottom: 20px;
+    }
+    
+    .addToCartButton {
+    width: 100%;
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: all 0.3s ease;
+    }
+    
+    .addToCartButton:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
     }
