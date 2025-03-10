@@ -1,0 +1,41 @@
+@import "../../../styles/variables.css";
+
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.counter {
+    max-width: 150px;
+}
+
+.counterInput {
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+}
+
+.counterButton {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+}
+
+.counterButton:hover:not(:disabled) {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.addButton {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: all 0.3s ease;
+}
+
+.addButton:hover:not(:disabled) {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+}

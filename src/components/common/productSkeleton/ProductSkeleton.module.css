@@ -1,0 +1,53 @@
+@import "../../../styles/variables.css";
+
+.card {
+    margin-bottom: 20px;
+    height: 100%;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-secondary);
+    overflow: hidden;
+}
+
+.imageLoader {
+    height: 200px;
+    background: linear-gradient(90deg, var(--color-dark) 25%, var(--color-gray) 50%, var(--color-dark) 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s infinite;
+}
+
+.titleLoader {
+    height: 24px;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, var(--color-dark) 25%, var(--color-gray) 50%, var(--color-dark) 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s infinite;
+    border-radius: 4px;
+}
+
+.textLoader {
+    height: 60px;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--color-dark) 25%, var(--color-gray) 50%, var(--color-dark) 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s infinite;
+    border-radius: 4px;
+}
+
+.buttonLoader {
+    height: 38px;
+    width: 100%;
+    margin-top: auto;
+    background: linear-gradient(90deg, var(--color-dark) 25%, var(--color-gray) 50%, var(--color-dark) 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes loadingAnimation {
+    0% {
+    background-position: 200% 0;
+    }
+    100% {
+    background-position: -200% 0;
+    }
+}

@@ -1,41 +1,46 @@
+@import "../../../styles/variables.css";
+
 .card {
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
     height: 100%;
-    background-color: var(--color-gray);
+    background-color: var(--color-dark);
     border: 1px solid var(--color-secondary);
-    }
-    
-    .card:hover {
+}
+
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    .cardImage {
+}
+
+.cardImage {
     height: 200px;
     object-fit: cover;
-    }
-    
-    .cardTitle {
+}
+
+.cardTitle {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--color-white);
-    }
-    
-    .cardText {
+    margin-bottom: 0.5rem;
+}
+
+.cardText {
     font-size: 0.9rem;
-    color: var(--color-white);
+    color: var(--color-light-gray);
     margin-bottom: 1rem;
-    }
-    
-    .cardButton {
+}
+
+.cardButton {
     width: 100%;
     margin-top: auto;
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
-    }
-    
-    .cardButton:hover {
+    transition: all 0.3s ease;
+}
+
+.cardButton:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
-    }
+    transform: translateY(-2px);
+}
